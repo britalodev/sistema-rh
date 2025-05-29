@@ -1,6 +1,7 @@
 package com.italo.sistema_rh.service;
 
 import com.italo.sistema_rh.model.Cargo;
+import com.italo.sistema_rh.model.Departamento;
 import com.italo.sistema_rh.repository.CargoRepository;
 
 import java.util.List;
@@ -26,5 +27,9 @@ public class CargoService {
 
     public Cargo atualizCargo(Cargo cargo) {
         return cargoRepository.atualizarCargo(cargo);
+    }
+
+    public List<Cargo> buscarFuncionariosPorNome(String nome) {
+        return cargoRepository.buscarPorNome(nome);
     }
 }

@@ -1,5 +1,6 @@
 package com.italo.sistema_rh.controller;
 
+import com.italo.sistema_rh.model.Cargo;
 import com.italo.sistema_rh.model.Funcionario;
 import com.italo.sistema_rh.service.FuncionarioService;
 
@@ -26,5 +27,9 @@ public class FuncionarioController {
 
     public Funcionario atualizarFuncionario(Funcionario funcionario) {
         return funcionarioService.atualizarFuncionario(funcionario);
+    }
+    
+    public List<Funcionario> buscarCargoPorNome(String nome) {
+        return funcionarioService.buscarFuncionariosPorNome(nome);
     }
 }

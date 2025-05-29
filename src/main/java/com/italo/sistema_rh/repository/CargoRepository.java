@@ -1,7 +1,6 @@
 package com.italo.sistema_rh.repository;
 
 import com.italo.sistema_rh.model.Cargo;
-import com.italo.sistema_rh.model.Departamento;
 
 import java.util.ArrayList;
 import java.util.List;

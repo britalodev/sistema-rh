@@ -27,4 +27,8 @@ public class FuncionarioService {
     public Funcionario atualizarFuncionario(Funcionario funcionario) {
         return funcionarioRepository.atualizarFuncionario(funcionario);
     }
+
+    public List<Funcionario> buscarFuncionariosPorNome(String nome) {
+        return funcionarioRepository.buscarPorNome(nome);
+    }
 }

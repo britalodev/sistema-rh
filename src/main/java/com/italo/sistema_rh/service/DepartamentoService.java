@@ -1,6 +1,7 @@
 package com.italo.sistema_rh.service;
 
 import com.italo.sistema_rh.model.Departamento;
+import com.italo.sistema_rh.model.Funcionario;
 import com.italo.sistema_rh.repository.DepartamentoRepository;
 
 import java.util.List;
@@ -26,5 +27,9 @@ public class DepartamentoService {
 
     public Departamento atualizDepartamento(Departamento departamento) {
         return departamentoRepository.atualizarDepartamento(departamento);
+    }
+    
+    public List<Departamento> buscarFuncionariosPorNome(String nome) {
+        return departamentoRepository.buscarPorNome(nome);
     }
 }

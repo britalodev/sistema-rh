@@ -6,6 +6,7 @@ import com.italo.sistema_rh.model.Funcionario;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class DepartamentoRepository {
     private List<Departamento> departamentos = new ArrayList<>();
@@ -42,5 +43,11 @@ public class DepartamentoRepository {
         departamentos.add(departamentoAtualizado);
         return departamentoAtualizado;
 
+    }
+
+        public List<Departamento> buscarPorNome(String nome) {
+        return departamentos.stream()
+                .filter(f -> f.getNome().toLowerCase().contains(nome.toLowerCase()))
+                .collect(Collectors.toList());
     }
 }

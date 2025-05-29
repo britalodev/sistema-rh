@@ -1,10 +1,12 @@
 package com.italo.sistema_rh.repository;
 
+import com.italo.sistema_rh.model.Cargo;
 import com.italo.sistema_rh.model.Funcionario;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class FuncionarioRepository {
     private List<Funcionario> funcionarios = new ArrayList<>();
@@ -41,5 +43,11 @@ public class FuncionarioRepository {
         funcionarios.add(funcionarioAtualizado);
         return funcionarioAtualizado;
 
+    }
+
+    public List<Funcionario> buscarPorNome(String nome) {
+        return funcionarios.stream()
+                .filter(f -> f.getNome().toLowerCase().contains(nome.toLowerCase()))
+                .collect(Collectors.toList());
     }
 }

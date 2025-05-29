@@ -1,5 +1,6 @@
 package com.italo.sistema_rh.controller;
 
+import com.italo.sistema_rh.model.Cargo;
 import com.italo.sistema_rh.model.Departamento;
 import com.italo.sistema_rh.service.DepartamentoService;
 
@@ -26,5 +27,9 @@ public class DepartamentoController {
 
     public Departamento atualizarDepartamento(Departamento departamento) {
         return departamentoService.atualizDepartamento(departamento);
+    }
+
+    public List<Departamento> buscarCargoPorNome(String nome) {
+        return departamentoService.buscarFuncionariosPorNome(nome);
     }
 }
