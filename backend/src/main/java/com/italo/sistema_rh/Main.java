@@ -4,6 +4,7 @@ import com.italo.sistema_rh.controller.FuncionarioController;
 import com.italo.sistema_rh.model.Cargo;
 import com.italo.sistema_rh.model.Departamento;
 import com.italo.sistema_rh.model.Funcionario;
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +17,15 @@ public class Main {
         Cargo cargo = new Cargo(1L, "Desenvolvedor", "Desenvolvedor Java");
 
         // Criar um funcionário
-        Funcionario funcionario = new Funcionario(1L, "João", "joao@example.com", cargo, departamento);
+        Funcionario funcionario = new Funcionario(
+            1L,
+            "João",
+            "joao@example.com",
+            cargo,
+            departamento,
+            LocalDate.of(1990, 5, 10),
+            LocalDate.of(2015, 3, 1)
+        );
 
         // Salvar o funcionário
         funcionarioController.salvar(funcionario);

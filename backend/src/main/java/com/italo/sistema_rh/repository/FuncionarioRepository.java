@@ -39,7 +39,7 @@ public class FuncionarioRepository {
             return null;
         }
         funcionarios.removeIf(x -> x.getId().equals(funcionario.getId()));
-        Funcionario funcionarioAtualizado = new Funcionario(funcionario.getId(), funcionarioBanco.getNome(), funcionario.getEmail(),funcionario.getCargo(), funcionario.getDepartamento());
+        Funcionario funcionarioAtualizado = new Funcionario(funcionario.getId(), funcionarioBanco.getNome(), funcionario.getEmail(),funcionario.getCargo(), funcionario.getDepartamento(), funcionario.getDataNascimento(), funcionario.getDataAdmissao());
         funcionarios.add(funcionarioAtualizado);
         return funcionarioAtualizado;
 
