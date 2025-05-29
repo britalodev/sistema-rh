@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.003" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.002" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Italo\Desktop\sistema-rh\sistema-rh\target\test-classes;C:\Users\Italo\Desktop\sistema-rh\sistema-rh\target\classes;C:\Users\Italo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Italo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Italo\.m2\repository\org\mockito\mockito-core\2.28.2\mockito-core-2.28.2.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\Italo\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="java.class.path" value="C:\Users\Italo\Desktop\sistema-rh\target\test-classes;C:\Users\Italo\Desktop\sistema-rh\target\classes;C:\Users\Italo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Italo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Italo\.m2\repository\org\mockito\mockito-core\2.28.2\mockito-core-2.28.2.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\Italo\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="C:\java\graalvm-jdk-21.0.7+8.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Italo\AppData\Local\Temp\surefire5419249466454144876\surefirebooter-20250529143120032_3.jar C:\Users\Italo\AppData\Local\Temp\surefire5419249466454144876 2025-05-29T14-31-19_666-jvmRun1 surefire-20250529143120032_1tmp surefire_0-20250529143120032_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Italo\AppData\Local\Temp\surefire9497531410541377980\surefirebooter-20250529152116998_3.jar C:\Users\Italo\AppData\Local\Temp\surefire9497531410541377980 2025-05-29T15-21-16_893-jvmRun1 surefire-20250529152116998_1tmp surefire_0-20250529152116998_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Italo\Desktop\sistema-rh\sistema-rh\target\test-classes;C:\Users\Italo\Desktop\sistema-rh\sistema-rh\target\classes;C:\Users\Italo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Italo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Italo\.m2\repository\org\mockito\mockito-core\2.28.2\mockito-core-2.28.2.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\Italo\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Italo\Desktop\sistema-rh\target\test-classes;C:\Users\Italo\Desktop\sistema-rh\target\classes;C:\Users\Italo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Italo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Italo\.m2\repository\org\mockito\mockito-core\2.28.2\mockito-core-2.28.2.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\Italo\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\Italo\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Italo"/>
     <property name="user.language" value="pt"/>
@@ -25,13 +25,13 @@
     <property name="java.version.date" value="2025-04-15"/>
     <property name="java.home" value="C:\java\graalvm-jdk-21.0.7+8.1"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Italo\Desktop\sistema-rh\sistema-rh"/>
+    <property name="basedir" value="C:\Users\Italo\Desktop\sistema-rh"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="jdk.internal.vm.ci.enabled" value="true"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Italo\AppData\Local\Temp\surefire5419249466454144876\surefirebooter-20250529143120032_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Italo\AppData\Local\Temp\surefire9497531410541377980\surefirebooter-20250529152116998_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+8-LTS-jvmci-23.1-b60"/>
@@ -47,7 +47,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Italo\AppData\Local\Temp\"/>
     <property name="java.version" value="21.0.7"/>
-    <property name="user.dir" value="C:\Users\Italo\Desktop\sistema-rh\sistema-rh"/>
+    <property name="user.dir" value="C:\Users\Italo\Desktop\sistema-rh"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -65,6 +65,7 @@
   <testcase name="deveBuscarCargoPorId" classname="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.0"/>
   <testcase name="deveRemoverCargo" classname="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.0"/>
   <testcase name="deveRetornarNullQuandoCargoNaoExistir" classname="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.0"/>
+  <testcase name="deveBuscarCargoPorNome" classname="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.0"/>
   <testcase name="deveSalvarCargo" classname="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.0"/>
   <testcase name="deveRetornarNullAoTentarAtualizarCargoInexistente" classname="com.italo.sistema_rh.repository.CargoRepositoryTest" time="0.0"/>
 </testsuite>

@@ -29,7 +29,7 @@ public class DepartamentoController {
         return departamentoService.atualizDepartamento(departamento);
     }
 
-    public List<Departamento> buscarCargoPorNome(String nome) {
-        return departamentoService.buscarFuncionariosPorNome(nome);
+    public List<Departamento> buscarPorNome(String nome) {
+        return departamentoService.buscarPorNome(nome);
     }
 }

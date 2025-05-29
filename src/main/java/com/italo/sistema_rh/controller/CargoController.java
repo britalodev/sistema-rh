@@ -28,7 +28,7 @@ public class CargoController {
         return cargoService.atualizCargo(cargo);
     }
 
-    public List<Cargo> buscarCargoPorNome(String nome) {
-        return cargoService.buscarFuncionariosPorNome(nome);
+    public List<Cargo> buscarPorNome(String nome) {
+        return cargoService.buscarPorNome(nome);
     }
 }

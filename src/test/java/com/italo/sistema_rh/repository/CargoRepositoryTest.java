@@ -38,7 +38,7 @@ public class CargoRepositoryTest {
         Cargo cargoSalvo = cargoRepository.salvar(cargo);
         
         // When
-        Cargo cargoEncontrado = cargoRepository.buscarPorId(cargoSalvo.getId());
+        Cargo cargoEncontrado = cargoRepository.buscarPorId(cargoSalvo.getId()).orElse(null);
         
         // Then
         assertNotNull(cargoEncontrado);
@@ -49,7 +49,7 @@ public class CargoRepositoryTest {
     @Test
     public void deveRetornarNullQuandoCargoNaoExistir() {
         // When
-        Cargo cargoEncontrado = cargoRepository.buscarPorId(999L);
+        Cargo cargoEncontrado = cargoRepository.buscarPorId(999L).orElse(null);
         
         // Then
         assertNull(cargoEncontrado);
@@ -77,7 +77,7 @@ public class CargoRepositoryTest {
         cargoRepository.remover(cargo.getId());
         
         // Then
-        Cargo cargoRemovido = cargoRepository.buscarPorId(cargo.getId());
+        Cargo cargoRemovido = cargoRepository.buscarPorId(cargo.getId()).orElse(null);
         assertNull(cargoRemovido);
     }
     

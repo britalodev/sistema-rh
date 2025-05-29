@@ -29,7 +29,7 @@ public class DepartamentoService {
         return departamentoRepository.atualizarDepartamento(departamento);
     }
     
-    public List<Departamento> buscarFuncionariosPorNome(String nome) {
+    public List<Departamento> buscarPorNome(String nome) {
         return departamentoRepository.buscarPorNome(nome);
     }
 }

@@ -29,7 +29,7 @@ public class FuncionarioController {
         return funcionarioService.atualizarFuncionario(funcionario);
     }
     
-    public List<Funcionario> buscarCargoPorNome(String nome) {
-        return funcionarioService.buscarFuncionariosPorNome(nome);
+    public List<Funcionario> buscarPorNome(String nome) {
+        return funcionarioService.buscarPorNome(nome);
     }
 }

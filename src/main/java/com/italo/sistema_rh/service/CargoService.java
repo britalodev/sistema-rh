@@ -14,7 +14,7 @@ public class CargoService {
     }
 
     public Cargo buscarPorId(Long id) {
-        return cargoRepository.buscarPorId(id);
+        return cargoRepository.buscarPorId(id).orElse(null);
     }
 
     public List<Cargo> listarTodos() {
@@ -29,7 +29,7 @@ public class CargoService {
         return cargoRepository.atualizarCargo(cargo);
     }
 
-    public List<Cargo> buscarFuncionariosPorNome(String nome) {
+    public List<Cargo> buscarPorNome(String nome) {
         return cargoRepository.buscarPorNome(nome);
     }
 }
